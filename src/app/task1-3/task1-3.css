@@ -1,0 +1,26 @@
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.paid{
+    background-color: green;
+}
+
+.pending{
+    background-color: yellow;
+}
+
+.cancelled{
+    background-color: red;
+}

@@ -1,0 +1,13 @@
+<p>{{fontSize}}</p>
+<input 
+type="range" 
+min="1" 
+max="50" 
+[(ngModel)]="fontSize"
+>
+
+<p 
+    id="textForScaling" 
+    [style.font-size.px]="true ? fontSize : 0">
+    text for scaling
+</p>

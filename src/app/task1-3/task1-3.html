@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Sum</th>
+    </tr>
+
+    @for (order of orders; track $index) {
+        <tr [ngClass]="{
+            'paid': order.Status == 'paid',
+            'pending': order.Status == 'pending',
+            'cancelled': order.Status == 'cancelled'
+        }">
+            <td>{{order.Id}}</td>
+            <td>{{order.Name}}</td>
+            <td>{{order.Status}}</td>
+            <td>{{order.Sum | currency:'UAH':'symbol'}}</td>
+        </tr>
+    }
+</table>
